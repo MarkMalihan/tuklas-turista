@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+  
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #161616 0.5;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+  
+.title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1.0rem;
+}
+  
+.nav-links {
+    height: 100%;
+}
+  
+.nav-links ul {
+    display: flex;
+    /*margin: 0;
+    padding: 0;*/
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 20px;
+}
+  
+.nav-links li{
+    list-style: none;
+    margin: 0 3px;
+}
+  
+.nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    display: block;
+    /*padding: 1rem;*/
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    
+}
+  
+.nav-links li a.nav-active,
+.nav-links li a:hover{
+    color: #111;
+    background: #fff;
+}
+  
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+  
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+  
+.banner{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    background-image: url(./images/firmbee-com-SpVHcbuKi6E-unsplash2.jpg);
+    background-size: cover;
+    height: 70%;
+    padding: 90px;
+   
+}
+  
+.banner h1{
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-right: 10px;
+}
+
+.banner p{
+    text-align: center;
+    display: block;
+    color: white;
+}
+  
+.title h2{
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+
+
+.container{
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contact{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background:#ffffff;
+    box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
+    overflow: hidden;
+}
+
+.form-container{
+    padding: 20px;
+
+}
+
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #d8d8d8;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: rgb(2, 2, 2);
+    border-radius: 0.4rem;
+}
+
+.contact-form textarea{
+   resize: none;
+   height: 200px;
+}
+
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #18ac30;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-form .send-button .send-button:hover{
+    background: hsl(181, 100%, 44%, 0.8 );
+    transition: 0.3s all linear;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.other{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.other h3{
+    color: #1d1d1d;
+}
+
+/*.faq{
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    justify-items: center;
+}*/
+
+.faq h1{
+    text-align: center;
+    color: rgb(27, 27, 27);
+    margin: 50px;
+}
+
+.accordion {
+    background-color: rgb(211, 210, 210);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    width: 1000px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 20px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.active, .accordion:hover {
+    background-color: rgb(180, 175, 175);
+}
+  
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+   content: "\2212";
+}
+  
+.panel {
+    padding: 0 10px;
+    background-color: white;
+    color: #1d1d1d;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 1000px;
+    margin: auto;
+}
+
+.sticky-footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    padding-right: 13px;
+    padding-bottom: 1px;
+    border-top: 8px solid #14531c ;
+    position: sticky;
+    top: 100%;
+}
+  
+@media (max-width: 800px){
+    .main-nav{
+      flex-direction: column;
+      align-items: flex-start;
+     
+    }
+  
+    .toggle-button{
+      display: flex;
+    }
+  
+    .nav-links{
+      display: none;
+      width: 100%;
+      background-color: #161616;
+
+    }
+  
+    .nav-links ul{
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .nav-links ul li{
+      text-align: center;
+    }
+  
+    .nav-links ul li a{
+      padding: .5rem 1rem;
+    }
+  
+    .nav-links.active{
+      display: flex;
+    }
+
+    .banner{
+        background-size: 570px;
+        padding: 55px;
+      }
+    
+      .banner h1{
+        justify-content: center;
+        font-size: 40px;
+      }
+    
+      .banner p{
+        text-align: center;
+      }
+    
+      .title h2{
+        font-size: 30px;
+      }
+  
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .accordion{
+        margin: auto;
+        width: 95%;
+    }
+
+    .panel{
+        margin: auto;
+        width: 95%;
+    }
+
+    .sticky-footer{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:700px){
+    .contact{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 3rem !important; /*20rem og*/
+    }
+    .map iframe{
+        height: 300px;
+    }
+}

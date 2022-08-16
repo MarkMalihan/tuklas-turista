@@ -3,7 +3,7 @@
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: #161616;
+  background: #161616 0.5;
   flex-wrap: wrap;
   overflow: hidden;
   position: fixed;
@@ -25,7 +25,7 @@ body{
 .title {
   color: white;
   font-size: 1.5rem;
-  margin: .5rem;
+  margin: 1.0rem;
 }
 
 .nav-links {
@@ -84,6 +84,37 @@ body{
   border-radius: 10px;
 }
 
+.banner{
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  background-image: url(./images/36970978_1800917839989376_6823662135134912512_n2.jpg);
+  background-size: cover;
+  height: 70%;
+  padding: 100px;
+ 
+}
+
+.banner h1{
+  font-size: 45px;
+  text-align: right;
+  display: block;
+  color: white;
+  margin-right: 5px;
+}
+
+.banner p{
+  text-align: right;
+  display: block;
+  color: white;
+}
+
+.title h2{
+  text-align: center;
+  color: rgb(29, 29, 29);
+}
+
 footer{
   background-color: rgb(26, 26, 26);
   color: white;
@@ -106,6 +137,7 @@ footer{
   .main-nav{
     flex-direction: column;
     align-items: flex-start;
+   
   }
 
   .toggle-button{
@@ -115,6 +147,7 @@ footer{
   .nav-links{
     display: none;
     width: 100%;
+    background-color: #161616 ;
   }
 
   .nav-links ul{
@@ -133,4 +166,24 @@ footer{
   .nav-links.active{
     display: flex;
   }
+
+  .banner{
+    background-size: 1400px;
+    padding: 50px;
+  }
+
+  .banner h1{
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .banner p{
+    text-align: center;
+  }
+
+  .title h2{
+    font-size: 30px;
+  }
+
+
 }
