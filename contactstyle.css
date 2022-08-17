@@ -197,16 +197,12 @@ body{
 
 .other{
     text-align: center;
-    margin: 30px;
-    padding: 10px;
+    margin: 25px;
     color: black;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .other h3{
-    color: #1d1d1d;
+    color:#1d1d1d;
 }
 
 /*.faq{
@@ -321,25 +317,29 @@ body{
     .banner{
         background-size: 570px;
         padding: 55px;
-      }
+    }
     
-      .banner h1{
+    .banner h1{
         justify-content: center;
         font-size: 40px;
         margin: 17px;
-      }
+    }
     
-      .banner p{
+    .banner p{
         text-align: center;
-      }
+    }
     
-      .title h2{
+    .title h2{
         font-size: 30px;
-      }
+    }
   
     .container{
         margin: 0 auto;
         width: 90%;
+    }
+
+    .other a{
+        text-align: center;
     }
 
     .accordion{
