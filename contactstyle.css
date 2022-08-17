@@ -104,7 +104,7 @@ body{
     text-align: center;
     display: block;
     color: white;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .banner p{
@@ -326,6 +326,7 @@ body{
       .banner h1{
         justify-content: center;
         font-size: 40px;
+        margin: 17px;
       }
     
       .banner p{
