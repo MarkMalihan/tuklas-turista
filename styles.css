@@ -133,7 +133,7 @@ footer{
   top: 100%;
 }
 
-@media (max-width: 800px){
+@media (max-width: 720px){
   .main-nav{
     flex-direction: column;
     align-items: flex-start;
@@ -167,6 +167,7 @@ footer{
     display: flex;
   }
 
+
   .banner{
     background-size: 1400px;
     padding: 50px;
@@ -175,6 +176,7 @@ footer{
   .banner h1{
     justify-content: center;
     font-size: 40px;
+    text-align: center;
   }
 
   .banner p{
