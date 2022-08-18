@@ -238,12 +238,12 @@ body{
 }
 
 .accordion {
-    background-color: rgb(211, 210, 210);
-    color: #444;
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    width: 1000px;
+    width: 800px;
     border: none;
     text-align: left;
     outline: none;
@@ -277,12 +277,13 @@ body{
 .panel {
     padding: 0 10px;
     background-color: white;
-    color: #1d1d1d;
+    color: #0a0a0a;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    width: 1000px;
+    width: 800px;
     margin: auto;
+    text-align: justify;
 }
 
 .sticky-footer{

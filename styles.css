@@ -112,7 +112,13 @@ body{
 
 .title h2{
   text-align: center;
-  color: rgb(29, 29, 29);
+  color: rgb(8, 66, 13);
+}
+
+.container{
+  margin: 0px 60px 60px 60px;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 footer{
