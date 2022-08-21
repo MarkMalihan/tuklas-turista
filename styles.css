@@ -153,7 +153,7 @@ body{
   gap: 1.5rem;
   box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
   overflow: hidden;
-  border-bottom: 2px solid #14531c;
+  /*border-bottom: 2px solid #14531c;*/
   padding-bottom: 40px;
 }
 
@@ -171,14 +171,76 @@ body{
   height: 100%;
 }
 
-#sites{
-  display: flex;
-  flex-direction: column;
-
+.destinations{
+  background-image: url(./images/Screenshot\ \(200\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*--bg-image: url("./images/Screenshot\ \(200\).png");
+  --bg-image-opacity: 0.70;*/
+  place-content: center;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
 }
 
-#sites-details{
- float: right;
+.food{
+  background-image: url(./images/rumman-amin-LNn6O_Mt730-unsplash2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*--bg-image: url(./images/rumman-amin-LNn6O_Mt730-unsplash2.jpg);
+  --bg-image-opacity: 0.70;*/
+  place-content: center;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.destinations::after, .food::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  /*opacity: var(--bg-image-opacity);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  background: black;
+  opacity: 0.6;
+}
+
+.other-page-title h2{
+  font-size: 50px;
+  padding: 30px 30px 0px 30px ;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  text-shadow: 5px 5px 4px rgb(0, 0, 0);
+}
+
+.other-page-container{
+  margin: 0px 50px 50px 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.other-page-content{
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.other-page-content-detail{
+  text-align: justify;
+  line-height: 2;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+  /*background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);*/
+  padding: 0px 20px 20px 20px;
 }
 
 .button {
@@ -212,7 +274,6 @@ body{
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
@@ -222,7 +283,7 @@ body{
   right: 0;
 }
 
-.button:link, :visited, :active{
+.button :link, :visited, :active{
   color: white;
   text-decoration: none;
 }
@@ -319,6 +380,11 @@ footer{
   .map iframe{
     margin-top: 0px;
     height: 300px;
+  }
+
+  .other-page-container{
+    width: 90%;
+    margin: 20px;
   }
 
 }
