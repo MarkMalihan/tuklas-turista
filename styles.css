@@ -114,7 +114,23 @@ body{
   background-size: cover;
   height: 70%;
   padding: 100px;
- 
+  place-content: center;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.banner::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  /*opacity: var(--bg-image-opacity);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  background: black;
+  opacity: 0.2;
 }
 
 .banner h1{
@@ -129,11 +145,13 @@ body{
   text-align: right;
   display: block;
   color: white;
+  font-size: 18px;
 }
 
 .title h2{
   text-align: center;
   color: rgb(8, 66, 13);
+  padding-top: 20px;
 }
 
 .container{
@@ -386,5 +404,6 @@ footer{
     width: 90%;
     margin: 20px;
   }
+
 
 }
