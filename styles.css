@@ -43,6 +43,14 @@ body{
   z-index: 10;
 }
 
+.logo {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  align-items: center;
+  position: relative;
+  margin: 10px 10px;
+}
 .title {
   color: white;
   font-size: 1.5rem;
@@ -235,7 +243,7 @@ body{
 }
 
 .other-page-container{
-  margin: 0px 50px 50px 50px;
+  margin: 0px 50px 0px 50px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -306,6 +314,62 @@ body{
   text-decoration: none;
 }
 
+.recomm-container p{
+  text-align: justify;
+  text-align: center;
+  margin: 30px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.recommendation{
+  overflow-x: hidden;
+  
+}
+.recommendation p{
+  text-align: center;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+.row{
+  position: relative;
+  margin: 0 auto;
+  left: 70px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+  display: block;
+}
+
+.recomm-container h2{
+  text-align: center;
+}
+.recomm-container {
+  padding: 0 16px;
+}
+
+.recomm-container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.position {
+  color: grey;
+}
+
 
 footer{
   background-color: rgb(26, 26, 26);
@@ -329,6 +393,10 @@ footer{
   #myBtn{
     bottom: 20px;
     right: 12px;
+  }
+
+  .logo{
+    display: none;
   }
   
   .main-nav{
@@ -405,5 +473,16 @@ footer{
     margin: 20px;
   }
 
-
+  .row{
+    left: 20px;
+   }
+ 
+   .column {
+     width: 90%;
+     display: block;
+   }
+ 
+   .recomm-container p{
+     text-align: center;
+   }
 }

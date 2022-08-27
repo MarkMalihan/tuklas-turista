@@ -32,6 +32,15 @@ body{
   #myBtn:hover {
     background-color: #555;
   }
+
+  .logo {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    position: relative;
+    margin: 10px 10px;
+  }
   
 .main-nav{
     display: flex;
@@ -342,6 +351,10 @@ body{
     #myBtn{
         bottom: 20px;
         right: 12px;
+    }
+
+    .logo{
+        display: none;
     }
       
     .main-nav{
