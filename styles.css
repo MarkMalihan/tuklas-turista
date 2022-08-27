@@ -357,7 +357,7 @@ body{
   display: block;
 }
 
-.recomm-container h2{
+.recomm-container h3{
   text-align: center;
 }
 .recomm-container {
@@ -485,10 +485,7 @@ footer{
      width: 90%;
      display: block;
    }
-  
-   .recomm-container h3{
-    text-align: center;
-   }
+
    .recomm-container p{
      text-align: center;
    }
