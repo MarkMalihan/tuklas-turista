@@ -311,4 +311,17 @@ body{
       font-size: 30px;
     }
 
+    .row{
+      left: 20px;
+     }
+   
+     .column {
+       width: 90%;
+       display: block;
+     }
+  
+     .recomm-container p{
+       text-align: center;
+     }
+
 }
