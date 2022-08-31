@@ -206,15 +206,17 @@ body{
 }
 
 .column:hover{
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(219, 219, 219);
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(53, 53, 53, 0.1);
 }
 
 .card img{
   display: block;
+  border-radius: 10px;
+  height: 200px;
 }
 
 .recomm-container h3{
