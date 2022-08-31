@@ -89,7 +89,7 @@ body{
   
 }
 
-.nav-links li a.active,
+.nav-links li a.nav-active,
 .nav-links li a:hover{
   color: #111;
   background: #fff;
@@ -578,5 +578,11 @@ footer{
    .recomm-container p{
      text-align: center;
    }
+
+   .accordion{
+    margin: auto;
+    width: 95%;
+}
+
 
 }
