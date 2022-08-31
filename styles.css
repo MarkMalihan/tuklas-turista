@@ -374,6 +374,27 @@ body{
   color: grey;
 }
 
+.gallery{
+  overflow: hidden;
+}
+
+.gallery p{
+  text-align: center;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+
+.office{
+  overflow: hidden;
+}
+
+.office p{
+  text-align: center;
+  margin: 30px;
+  line-height: 1.5;
+}
+
 
 footer{
   background-color: rgb(26, 26, 26);
