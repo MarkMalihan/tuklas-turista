@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./images/tab-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Tuklas Turismo | Home</title>
 </head>
 
@@ -39,12 +42,15 @@
         <div class="banner">
             <h1>Welcome to Guinayangan</h1>
             <p>Once you set foot in Guinayangan, you could not resist coming back.</p>
+            <button class="guin-button" style="vertical-align:middle" onclick=" window.open('http://guinayangan.com','_blank')" rel="noopener noreferrer"><span>
+                guinayangan.com
+            </span>
         </div>
     </header>
     
-    <a class="weatherwidget-io" href="https://forecast7.com/en/13d84122d47/guinayangan/" data-label_1="GUINAYANGAN" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >GUINAYANGAN WEATHER</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/13d84122d47/guinayangan/" data-label_1="GUINAYANGAN" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="clear" >GUINAYANGAN WEATHER</a>
 
-    <section class="about-guin">
+    <!--<section class="about-guin">
         <div class="title">
             <h2>Guinayangan, Quezon</h2>
         </div>
@@ -70,7 +76,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="destinations">
         <div class="other-page-title">
@@ -102,6 +108,7 @@
         <div class="row">
             <div class="column" onclick="location.href='./destinations/maulawin.html'" style="cursor:pointer;" >
               <div class="card">
+                <img src="./images/Screenshot (200).webp" alt="" style="width: 100%">
                 <img src="./images/Screenshot (200).png" alt="" style="width: 100%">
                 <div class="recomm-container">
                   <h3>Maulawin Spring Protected Landscape</h3>
@@ -166,6 +173,8 @@
         <div class="row">
             <div class="column" onclick="location.href='#'" style="cursor:pointer;">
               <div class="card">
+                <source srcset="./images/Screenshot (200).webp" type="image/webp">
+                <source srcset="./images/Screenshot (200).png" type="image/png"> 
                 <img src="./images/Screenshot (200).png" alt="" style="width: 100%">
                 <div class="recomm-container">
                   <h3>Maulawin Spring Protected Landscape</h3>
