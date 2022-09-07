@@ -122,7 +122,7 @@ body{
   display: block;
   color: white;
   background-color: rgb(29, 29, 29);
-  background-image: url(./images/RealCompetentHerald.gif);
+  background-image: url(./images/guin-banner-min.gif);
   /*background-image: url(./images/36970978_1800917839989376_6823662135134912512_n2.webp);
   background-image: url(./images/36970978_1800917839989376_6823662135134912512_n2.jpg);*/
   background-size: cover;
@@ -409,10 +409,10 @@ body{
   margin-top: -8px;
 }
 
-.card {
+/*.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
+*/
 .card img{
   display: block;
 }
@@ -454,6 +454,7 @@ body{
   margin: 30px;
   line-height: 1.5;
 }
+
 
 
 footer{
