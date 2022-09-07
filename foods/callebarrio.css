@@ -121,7 +121,7 @@
     display: block;
     color: white;
     background-color: rgb(29, 29, 29);
-    background-image: url(../images/foods/CalleBarrio/cb-banner.gif);
+    background-image: url(../images/foods/CalleBarrio/cb-banner2.gif);
     background-size: cover;
     height: 65vh;
     padding: 100px;
@@ -170,7 +170,17 @@
     padding-top: 20px;
   }*/
 
-  
+.ratings{
+  margin: 15px 50px ;
+  display: inline-block;
+}
+
+.address{
+  margin: 0px 50px;
+  display: inline-block;
+}
+
+
 .wrapper {
 	width: 1200px;
 	min-height: auto;
