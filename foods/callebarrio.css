@@ -227,7 +227,9 @@
 }
 .wrapper #btnBox:checked~.btn-area .btn1 {
 	display: none;
-}.container{
+}
+
+.container{
     margin: 0px 50px 50px 50px;
     color: #fff;
     display: flex;
@@ -378,5 +380,28 @@
    
      .recomm-container p{
        text-align: center;
+     }
+
+  .wrapper{
+    width: 90%;
+    
+  }
+
+     .wrapper ul li{
+      width: 90%;
+      float: center;
+      margin-bottom: -5px;
+     }
+
+     .wrapper ul li:nth-child(1n + 3) {
+      max-height: 0;
+      opacity: 0;
+      transition: 0.1s ease-in;
+    }
+
+     .btn-area{
+      margin-top: -10px;
+      justify-content: center;
+      justify-items: center;
      }
   }
