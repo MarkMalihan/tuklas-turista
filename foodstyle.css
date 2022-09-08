@@ -310,17 +310,21 @@ justify-items: center;
     }
 
     .banner{
-      background-size: 1000px;
-      padding: 55px;
+      background-size: 1400px;
+      padding: 50px;
+      height: 400px;
+      margin: 0 auto;
     }
     
     .banner h1{
       justify-content: center;
       font-size: 40px;
-      margin: 17px;
+      text-align: center;
+      margin-top: 15px;
     }
-    
+  
     .banner p{
+      margin-top: 40px;
       text-align: center;
     }
     
