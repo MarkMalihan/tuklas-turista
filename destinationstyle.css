@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -118,29 +121,51 @@ body{
 }
   
 .banner{
-    text-align: center;
-    display: block;
-    color: white;
-    background-color: rgb(29, 29, 29);
-    background-image: url(./images/andrew-neel-1-29wyvvLJA-unsplash.jpg);
-    background-size: cover;
-    height: 70%;
-    padding: 90px;
-   
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  background-image: url(./images/home-destination-banner.gif);
+  background-size: cover;
+  height: 65vh;
+  padding: 100px;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+  justify-content: center;
+justify-items: center;
 }
+
+.banner::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  /*opacity: var(--bg-image-opacity);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  background: black;
+  opacity: 0.6;
   
+}
+
 .banner h1{
-    font-size: 50px;
-    text-align: center;
-    display: block;
-    color: white;
-    margin: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 6.25em;
+  text-align: center;
+  display: block;
+  color: white;
+  margin-top: 45px;
 }
 
 .banner p{
-    text-align: center;
-    display: block;
-    color: white;
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 1.125em;
+  margin-top: -50px;
 }
   
 .title h2{
@@ -150,15 +175,6 @@ body{
 
 #myBtnContainer{
   padding: 30px;
-}
-
-.filterDiv {
-  float: left;
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .btn {
@@ -212,18 +228,40 @@ body{
 .card {
   box-shadow: 0 4px 8px 0 rgba(53, 53, 53, 0.1);
 }
-
 .card img{
   display: block;
+  margin: 0 auto;
   border-radius: 10px;
-  height: 200px;
+  height: 450px;
 }
 
 .recomm-container h3{
   text-align: center;
 }
+
 .recomm-container {
-  padding: 0 16px;
+  padding: 0px 16px;
+  bottom: 0;
+}
+
+.card {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.card .recomm-container {
+  position: absolute;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.recomm-container p{
+  margin: 10px;
 }
 
 .recomm-container::after, .row::after {
@@ -233,8 +271,9 @@ body{
 }
 
 .position {
-  color: grey;
+  color: rgb(182, 182, 182);
 }
+
 
 
 .sticky-footer{
@@ -325,5 +364,54 @@ body{
      .recomm-container p{
        text-align: center;
      }
+
+     .banner{
+      text-align: center;
+      display: block;
+      color: white;
+      background-color: rgb(29, 29, 29);
+      background-image: url(../images/foods/CalleBarrio/cb-banner2.gif);
+      background-size: cover;
+      height: 65vh;
+      padding: 100px;
+      place-content: center;
+      text-align: center;
+      position: relative;
+      isolation: isolate;
+      justify-content: center;
+    justify-items: center;
+    }
+    
+    .banner::after{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      /*opacity: var(--bg-image-opacity);
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-repeat: no-repeat;*/
+      background: black;
+      opacity: 0.6;
+      
+    }
+    
+    .banner h1{
+      font-family: 'Caveat', cursive;
+      font-size: 6.25em;
+      text-align: center;
+      display: block;
+      color: white;
+      margin-top: 45px;
+    }
+    
+    .banner p{
+      text-align: center;
+      display: block;
+      color: white;
+      font-size: 1.125em;
+      margin-top: -50px;
+    }
+  
 
 }
