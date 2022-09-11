@@ -263,6 +263,8 @@ body{
   text-align: center;
   position: relative;
   isolation: isolate;
+  height: 80vh;
+
 }
 
 .food{
@@ -277,6 +279,7 @@ body{
   text-align: center;
   position: relative;
   isolation: isolate;
+  height: 80vh;
 }
 
 .destinations::after, .food::after {
@@ -294,7 +297,7 @@ body{
 
 .other-page-title h2{
   font-family: 'Caveat', cursive;
-  padding: 30px 30px 0px 30px ;
+  padding: 80px 30px 0px 30px ;
   font-size: 5em;
   text-align: center;
   color: rgb(240, 240, 240);
@@ -315,10 +318,11 @@ body{
   box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
   overflow: hidden;
   padding-bottom: 40px;
+ 
 }
 
 .other-page-content-detail p{
-  text-align: justify;
+  text-align: center;
   line-height: 2;
   font-size: 1.1250em;
   margin-top: 0px;
@@ -331,7 +335,7 @@ body{
 
 .button {
   /*display: inline-block;*/
-  float: right;
+  align-items: center;
   border-radius: 50px;
   background-color: #f4511e;
   border: none;
