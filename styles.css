@@ -34,7 +34,6 @@ body{
     background-color: #555;
   }
 
-
 .main-nav{
   display: flex;
   justify-content: space-between;
@@ -170,7 +169,6 @@ body{
   font-family: 'Staatliches', cursive;
   text-align: center;
   color: rgb(0, 0, 0);
- 
   letter-spacing: 7px;
 }
 
