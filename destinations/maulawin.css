@@ -302,11 +302,18 @@ body{
   flex: 33%;
 }
 
-.contact{
+.contact-content{
   text-align: center;
   color: black;
   border-top: 2px solid #1a1a1a;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
+}
+
+.price{
+  text-align: center;
+  color: black;
+  border-top: 2px solid #1a1a1a;
+  padding-top: 20px;
 }
 
 .contact a:link{
