@@ -168,6 +168,62 @@ justify-items: center;
   font-size: 1.125em;
   margin-top: -50px;
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.tag-name-0 {
+  background-color: #7c7c7c;
+  padding: 10px;
+  flex: 25%;
+  float: left;
+}
+
+.tag-name-1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-2{
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-3{
+  background-color: rgb(66, 94, 122);
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-4{
+  background-color: rgb(113, 66, 122);
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-5{
+  background-color: rgb(84, 122, 66);
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-6{
+  background-color: rgb(151, 41, 56);
+  padding: 10px;
+  flex: 25%;
+}
+
+.tag-name-7{
+  background-color: rgb(209, 198, 43);
+  padding: 10px;
+  flex: 25%;
+}
   
 .title h2{
   font-family: 'Staatliches', cursive;

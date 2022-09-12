@@ -123,11 +123,9 @@ body{
   color: white;
   background-color: rgb(29, 29, 29);
   background-image: url(./images/guin-banner-min.gif);
-  /*background-image: url(./images/36970978_1800917839989376_6823662135134912512_n2.webp);
-  background-image: url(./images/36970978_1800917839989376_6823662135134912512_n2.jpg);*/
   background-size: cover;
   height: 100vh;
-  padding: 100px;
+  padding: 6.25em; /*100px*/
   place-content: center;
   position: relative;
   isolation: isolate;
@@ -154,7 +152,7 @@ body{
   text-align: center;
   display: block;
   color: white;
-  margin-top: 90px;
+  margin-top: 1em/*90px*/;
 }
 
 .banner p{
@@ -253,8 +251,6 @@ body{
 
 .destinations{
   background-image: url(./images/home-destination-banner.gif);
-  /*background-image: url(./images/Screenshot\ \(200\).webp);
-  background-image: url(./images/Screenshot\ \(200\).png);*/
   background-size: cover;
   background-repeat: no-repeat;
   /*--bg-image: url("./images/Screenshot\ \(200\).png");
@@ -269,8 +265,6 @@ body{
 
 .food{
   background-image: url(./images/home-food-banner.gif);
-  /*background-image: url(./images/rumman-amin-LNn6O_Mt730-unsplash2.webp);
-  background-image: url(./images/rumman-amin-LNn6O_Mt730-unsplash2.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   /*--bg-image: url(./images/rumman-amin-LNn6O_Mt730-unsplash2.jpg);
@@ -461,7 +455,7 @@ body{
 }
 
 .position {
-  color: rgb(182, 182, 182);
+  color: rgb(170, 165, 165);
 }
 
 .gallery{
@@ -544,7 +538,53 @@ body{
   line-height: 1.5;
 }
 
+.office-row{
+  position: relative;
+  margin: 0 auto;
+  left: 70px;
+}
 
+.office-column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.office-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 350px;
+}
+
+.office-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.logo-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.office-container h2{
+  text-align: center;
+}
+.office-container {
+  padding: 0 16px;
+}
+
+.coffice-ontainer::after, .office-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.office-position {
+  color: grey;
+}
 
 footer{
   background-color: rgb(26, 26, 26);
@@ -656,6 +696,11 @@ footer{
     margin: 20px;
   }
 
+  .other-page-title h2{
+    text-align: center;
+    font-size: 3.2em;
+  }
+
   .row{
     left: 20px;
    }
@@ -690,6 +735,19 @@ footer{
       margin-top: -10px;
       justify-content: center;
       justify-items: center;
+     }
+
+     .office-row{
+      left: 20px;
+     }
+   
+     .office-column {
+       width: 90%;
+       display: block;
+     }
+   
+     .office-container p{
+       text-align: center;
      }
 
 }
