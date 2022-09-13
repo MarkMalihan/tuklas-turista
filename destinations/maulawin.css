@@ -342,6 +342,7 @@ body{
   color: #000;
   border: 2px solid black;
   padding: 20px;
+  width: 500px;
 }
 
 .container-form h2{
@@ -371,7 +372,7 @@ input, select {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  font-size: 10px;
+  font-size: 0.8em;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
