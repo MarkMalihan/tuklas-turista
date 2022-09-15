@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="maulawin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="maulawin.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../images/tab-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Maulawin Spring Protected Landscape</title>
 </head>
 
@@ -49,7 +51,7 @@
     </section>
 
     <section class="ratings">
-        <h3>Ratings: </h3>
+        <h3>Ratings: 4.1 </h3>
     </section>
 
     <section class="address">
@@ -126,15 +128,14 @@
                             <h3>Facebook</h3>
                             <a href="#" onclick=" window.open('https://www.facebook.com/MaulawinSpringProtectedLandscape','_blank')" rel="noopener noreferrer">Maulawin Spring Protected Landscape</a>
                     </div>
-
-                    <div class="price">
-                        <h2>Prices/Fees</h2>
-                        <a>Php 50.00 per guest</a>
-                    </div>
                 </div>
                 
                 <!--reservation form-->
                 <div class = "container-form" id="sticky-form">
+                    <div class="price">
+                        <h2>Prices/Fees</h2>
+                        <a>Php 50.00 per guest</a>
+                    </div>
                     <h2>Request to Visit?</h2>
                     <form action="">
                         <div class="form-field">
@@ -157,8 +158,8 @@
                         </div>
                         <div class="form-field">
                             <p>Guests</p>
-                            <input type="number" placeholder="No. of Guests" size="20">
-                            <input type="number" placeholder="No. of Guests" size="20">
+                            <input type="number" placeholder="Adult" size="20">
+                            <input type="number" placeholder="Children" size="20">
                     
                         </div>
         
@@ -171,7 +172,103 @@
     </section>
     
     <section class="comments">
-        <h2>Comments</h2>
+        <h2>Ratings & Comments</h2>
+        <div class="rating-chart">
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>4.1 average based on 254 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+
+            <div class="rating-row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-5"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>150</div>
+            </div>
+            <div class="side">
+                <div>4 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-4"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>63</div>
+            </div>
+            <div class="side">
+                <div>3 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>15</div>
+            </div>
+            <div class="side">
+                <div>2 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-2"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>6</div>
+            </div>
+            <div class="side">
+                <div>1 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-1"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>20</div>
+            </div>
+            </div>
+        </div>
+        <div class="review-container">
+            <h2>Write a Review</h2>
+            <div class="post">
+              <div class="text">Thanks for rating us!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+          </div>
     </section>
    
     <footer class="sticky-footer">

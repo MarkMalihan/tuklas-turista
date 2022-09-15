@@ -330,8 +330,8 @@ body{
 .price{
   text-align: center;
   color: black;
-  border-top: 2px solid #1a1a1a;
-  padding-top: 20px;
+  /*border-top: 2px solid #1a1a1a;*/
+  padding-bottom: 10px;
 }
 
 .contact a:link{
@@ -361,7 +361,6 @@ body{
   border: 2px solid black;
   padding: 20px;
   width: 500px;
-  height: 500px;
 }
 
 #sticky-form{
@@ -431,6 +430,192 @@ input[type='number']{
   color: black;
   border-top: 2px solid #1a1a1a;
   padding-bottom: 25px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.rating-row:after {
+  content: "";
+  display: table;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336; 
+  margin-bottom: 40px;}
+
+
+
+.review-container{
+  position: relative;
+  width: 400px;
+  background: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.review-container .post{
+  display: none;
+}
+
+.review-container .text{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.review-container .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.review-container .edit:hover{
+  text-decoration: underline;
+}
+
+.review-container .star-widget input{
+  display: none;
+}
+
+.review-container .star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+.star-widget input:checked ~ label{
+  color: #fd4;
+}
+.star-widget input #rate-5:checked ~ label{
+  color: rgb(255, 225, 0);
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.review-container form{
+  display: none;
+}
+.star-widget input:checked ~ form{
+  display: block;
+}
+
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: rgb(12, 12, 10);
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid #333;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .submit-btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .submit-btn button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f4511e;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 100px;
+}
+form .submit-btn button:hover{
+  background: #c24925;
 }
 
 footer{
@@ -584,4 +769,6 @@ footer{
    input{
     width: 90%;
    }
+
+   
 }
