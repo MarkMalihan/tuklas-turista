@@ -470,7 +470,7 @@ body{
 
 
 .wrapper {
-	width: 1200px;
+	width: 100%;
 	min-height: auto;
 	margin: 5px auto;
 }
@@ -506,8 +506,9 @@ body{
 	font-weight: 900;
 	width: 180px;
 	line-height: 50px;
-	margin: 10px auto 0;
+	margin: 5px auto 0;
 	border-radius: 50px;
+  margin-bottom: 50px;
 }
 .wrapper .btn-area .btn2 {
 	display: none;
@@ -525,65 +526,6 @@ body{
 }
 .wrapper #btnBox:checked~.btn-area .btn1 {
 	display: none;
-}
-
-
-.office{
-  overflow: hidden;
-}
-
-.office p{
-  text-align: center;
-  margin: 30px;
-  line-height: 1.5;
-}
-
-.office-row{
-  position: relative;
-  margin: 0 auto;
-  left: 70px;
-}
-
-.office-column {
-  float: left;
-  width: 30%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.office-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 350px;
-}
-
-.office-card img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
-
-.logo-card img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.office-container h2{
-  text-align: center;
-}
-.office-container {
-  padding: 0 16px;
-}
-
-.coffice-ontainer::after, .office-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.office-position {
-  color: grey;
 }
 
 footer{
@@ -737,17 +679,6 @@ footer{
       justify-items: center;
      }
 
-     .office-row{
-      left: 20px;
-     }
-   
-     .office-column {
-       width: 90%;
-       display: block;
-     }
-   
-     .office-container p{
-       text-align: center;
-     }
+     
 
 }

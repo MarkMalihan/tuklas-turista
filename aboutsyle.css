@@ -186,6 +186,65 @@ body{
   line-height: 1.5;
 }
 
+.office{
+  overflow: hidden;
+}
+
+.office p{
+  text-align: center;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+.office-row{
+  position: relative;
+  margin: 0 auto;
+  left: 70px;
+}
+
+.office-column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.office-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 350px;
+}
+
+.office-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.logo-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.office-container h2{
+  text-align: center;
+}
+.office-container {
+  padding: 0 16px;
+}
+
+.coffice-ontainer::after, .office-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.office-position {
+  color: grey;
+}
+
+
 .meet-the-team{
   overflow-x: hidden;
 }
